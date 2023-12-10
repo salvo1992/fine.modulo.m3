@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compitto di Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg mb-3 px-5 fixed-top">
+      <div class="container-fluid">
+        <img
+          src="./assets/imgs/Netflix_Logo_RGB.png"
+          alt="Netflix Logo"
+          id="netflix-logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white-50"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">TV show</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">My List</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <div class="dropdown">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#"
+                  ><ion-icon
+                    class="fs-5 text-white md hydrated"
+                    name="search-sharp"
+                    role="img"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">
+                  <ion-icon
+                    class="fs-5 text-white md hydrated"
+                    name="notifications-sharp"
+                    role="img"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle text-white-50"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/avatar.png" alt="avatar Logo" id="profile" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner pubblicitario -->
+    <div class="hero__section position-relative">
+      <video
+        class="w-100"
+        src="./assets/imgs/Stranger Things _ Official Final Trailer _ Netflix (1).mp4"
+        autoplay=""
+        muted=""
+        loop=""
+      ></video>
+      <div class="trama position-absolute start-0 bottom-0 mb-3 ms-3">
+        <img src="./assets/imgs/9nvwf8eg.png" class="img-fluid scaled-down" />
+      </div>
+    </div>
+
+    <!-- DOWN NAV -->
+    <div class="row w-100 mt-4 px-5">
+      <div class="col-12 col-md-6 d-flex gap-4 px-4">
+        <h2 class="text-white px-2">TV Shows</h2>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle d-flex gap-3 align-items-center"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="col-12 col-md-6 d-flex justify-content-end align-items-center"
+      >
+        <div class="gap-2 d-none d-lg-flex">
+          <div class="w-50 h-100 list-icon text-white">
+            <ion-icon name="list" role="img" class="md hydrated"></ion-icon>
+          </div>
+          <div class="w-50 h-100 list-icon text-white">
+            <ion-icon name="apps" role="img" class="md hydrated"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fine nav secondaria inizio dei caroselli -->
+
+    <!--carosello1-->
+
+    <h3 class="text-capitalize px-4 text-white mt-5">Trending now</h3>
+    <div
+      id="carousel-primo"
+      class="carousel slide mt-3 position-relative"
+      style="opacity: 1; transform: translateX(0px)"
+    >
+      <div class="carousel-inner overflow-visible px-4">
+        <div class="carousel-item">
+          <div class="row random">
+            <img
+              src="./assets/imgs/movies/1.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/2.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/3.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/4.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/5.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/6.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="row">
+            <img
+              src="./assets/imgs/movies/4.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/1.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/7.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/9.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/10.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/15.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev position-absolute start-0 top-50 translate-middle"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon position-absolute top-50 start-100 translate-middle"
+          aria-hidden="true"
+        ></span>
+      </button>
+    </div>
+
+    <!--fine carosello 1 e inizio secondo -->
+    <h3 class="text-capitalize px-4 text-white mt-5">Watch it again</h3>
+    <div
+      id="carouselExample2"
+      class="carousel slide mt-3 position-relative"
+      style="opacity: 1; transform: translateX(0px)"
+    >
+      <div class="carousel-inner overflow-visible px-4">
+        <div class="carousel-item active">
+          <div class="row random">
+            <img
+              src="./assets/imgs/movies/7.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/13.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/11.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/17.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/18.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/10.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <img
+              src="./assets/imgs/movies/3.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/4.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/7.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/8.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/9.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt=""
+            />
+            <img
+              src="./assets/imgs/movies/10.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev position-absolute start-0 top-50 translate-middle"
+        type="button"
+        data-bs-target="#carouselExample2"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample2"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon position-absolute top-50 start-100 translate-middle"
+          aria-hidden="true"
+        ></span>
+      </button>
+    </div>
+    <!--fine carosello 2 e inizio terzo-->
+
+    <h3 class="text-capitalize px-4 text-white mt-5">new release</h3>
+    <div
+      id="carouselExample3"
+      class="carousel slide mt-3 position-relative"
+      style="transform: translateX(0px)"
+    >
+      <div class="carousel-inner overflow-visible px-4">
+        <div class="carousel-item active">
+          <div class="row random">
+            <img
+              src="./assets/imgs/movies/10.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt="Movie 1"
+            />
+            <img
+              src="./assets/imgs/movies/15.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 2"
+            />
+            <img
+              src="./assets/imgs/movies/6.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 3"
+            />
+            <img
+              src="./assets/imgs/movies/9.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 4"
+            />
+            <img
+              src="./assets/imgs/movies/17.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt="Movie 5"
+            />
+            <img
+              src="./assets/imgs/movies/14.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt="Movie 6"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <img
+              src="./assets/imgs/movies/7.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt="Movie 7"
+            />
+            <img
+              src="./assets/imgs/movies/4.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 8"
+            />
+            <img
+              src="./assets/imgs/movies/3.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 9"
+            />
+            <img
+              src="./assets/imgs/movies/8.png"
+              class="col-lg-2 d-none d-lg-block img-zoom"
+              alt="Movie 10"
+            />
+            <img
+              src="./assets/imgs/movies/9.png"
+              class="col-lg-2 col-md-4 d-none d-md-block img-zoom"
+              alt="Movie 11"
+            />
+            <img
+              src="./assets/imgs/movies/2.png"
+              class="col-lg-2 col-md-4 col-6 img-zoom"
+              alt="Movie 12"
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev position-absolute start-0 top-50 translate-middle"
+        type="button"
+        data-bs-target="#carouselExample3"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample3"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon position-absolute top-50 start-100 translate-middle"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--fine carosello 3 inizio footer-->
+   
+
+
+    <footer class="container-footer">
+      <div class="row">
+        <div class="social">
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/facebook.png"
+            alt="facebook"
+          />
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new--v1.png"
+            alt="instagram-new--v1"
+          />
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"
+            alt="twitter"
+          />
+          <img
+            width="28"
+            height="28"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png"
+            alt="youtube-play"
+          />
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contatti-1">
+          <span class="px-2">Audio and Subtitles</span
+          ><span class="px-2"></span> <span class="px-2">Media Center</span
+          ><span class="px-2"></span> <span class="px-2">Privacy</span
+          ><span class="px-2"></span> <span class="px-2">Contact Us</span
+          ><span class="px-2"></span>
+        </div>
+        <div class="contatti-1">
+          <span class="px-2">Audio Description</span><span class="px-2"></span>
+          <span class="px-2">Investor Relations</span
+          ><span class="px-2"></span> <span class="px-2">Legal Notices</span
+          ><span class="px-2"></span>
+        </div>
+        <div class="contatti-1">
+          <span class="px-2">Help Center</span><span class="px-2"></span>
+          <span class="px-2">Jobs</span><span class="px-2"></span>
+          <span class="px-2">Cookie Preferences</span><span class="px-2"></span>
+        </div>
+        <div class="contatti-1">
+          <span class="px-2">Gift Cards</span><span class="px-2"></span>
+          <span class="px-2"> of Use</span><span class="px-2"></span>
+          <span class="px-2">Corporate Information</span
+          ><span class="px-2"></span>
+        </div>
+      </div>
+      <div class="copyright">1997-2019 Netflix,Inc.{i-0d00fcda2fdf9c0de}</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
